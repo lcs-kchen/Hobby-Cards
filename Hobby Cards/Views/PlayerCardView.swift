@@ -33,10 +33,12 @@ struct PlayerCardView: View {
                                 .bold()
                                 .foregroundStyle(.white)
                         }
+                        .rotation3DEffect(Angle(degrees: 35), axis: (x: 1.0, y: 0.0, z: 0.0))
                     
                 }
                 Racket()
                     .scaledToFit()
+                    .rotationEffect(.degrees(-20))
             }
             
             
