@@ -100,8 +100,8 @@
 		84F00B6B2D11C2D40011EB86 /* Shape */ = {
 			isa = PBXGroup;
 			children = (
-				84F00B8C2D126C0B0011EB86 /* Hexagon.swift */,
 				84F00B6D2D11C3250011EB86 /* Racket.swift */,
+				84F00B8C2D126C0B0011EB86 /* Hexagon.swift */,
 			);
 			path = Shape;
 			sourceTree = "<group>";

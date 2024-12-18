@@ -18,7 +18,26 @@ struct PlayerCardView: View {
                     .scaledToFit()
             Text(providedPlayer.playerName)
                 .font(.system(.largeTitle, design: .default, weight: .thin))
-           
+            
+            HStack {
+                Racket()
+                    .scaledToFit()
+                    .rotationEffect(.degrees(20))
+                ZStack {
+                    Hexagon()
+                        .fill(.yellow)
+                        .frame(height: 100)
+                        .overlay {
+                            Text(providedPlayer.Country)
+                                .font(.largeTitle)
+                                .bold()
+                                .foregroundStyle(.white)
+                        }
+                    
+                }
+                Racket()
+                    .scaledToFit()
+            }
             
             
         }

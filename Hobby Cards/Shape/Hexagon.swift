@@ -12,14 +12,14 @@ struct Hexagon: Shape {
         
         var path = Path()
         
-        path.move(to: CGPoint(x: rect.maxX * 0, y: rect.maxY * 0.5))
-        path.addLine(to: CGPoint(x: rect.maxX * 0, y: rect.maxY * 0.5))
-        path.addLine(to: CGPoint(x: rect.maxX * 0.2, y: rect.maxY * 0.0))
-        path.addLine(to: CGPoint(x: rect.maxX * 0.8, y: rect.maxY * 0.0))
-        path.addLine(to: CGPoint(x: rect.maxX * 1.0, y: rect.maxY * 0.5))
-        path.addLine(to: CGPoint(x: rect.maxX * 0.8, y: rect.maxY * 1.0))
-        path.addLine(to: CGPoint(x: rect.maxX * 0.2, y: rect.maxY * 1.0))
-        path.addLine(to: CGPoint(x: rect.maxX * 0, y: rect.maxY * 0.5))
+        path.move(to: CGPoint(x: rect.maxX, y: rect.maxY * 0.5))
+        path.addLine(to: CGPoint(x: rect.minX, y: rect.maxY * 0.5))
+        path.addLine(to: CGPoint(x: rect.maxX * 0.25, y: rect.minY))
+        path.addLine(to: CGPoint(x: rect.maxX * 0.75, y: rect.minY))
+        path.addLine(to: CGPoint(x: rect.maxX, y: rect.maxY * 0.5))
+        path.addLine(to: CGPoint(x: rect.maxX * 0.75, y: rect.maxY))
+        path.addLine(to: CGPoint(x: rect.maxX * 0.25, y: rect.maxY))
+        path.addLine(to: CGPoint(x: rect.minX, y: rect.maxY * 0.5))
 
         return path
     }
