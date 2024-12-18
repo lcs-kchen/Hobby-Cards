@@ -9,7 +9,9 @@ import SwiftUI
 
 struct Fan: View {
     var body: some View {
-        NavigationStack {
+        NavigationLink {
+            PlayerDetailedView(playersToShow: fanZhengDong)
+        } label: {
             PlayerCardView(providedPlayer: fanZhengDong)
         }
     }

@@ -9,10 +9,8 @@ import SwiftUI
  
 struct PlayerDetailedView: View {
     
-    // MARK: Stored properties
     let playersToShow: player
     
-    // MARK: Computed properties
     var body: some View {
         ScrollView {
             VStack {

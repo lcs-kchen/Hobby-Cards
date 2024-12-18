@@ -9,7 +9,9 @@ import SwiftUI
 
 struct Ma: View {
     var body: some View {
-        NavigationStack {
+        NavigationLink {
+            PlayerDetailedView(playersToShow:maLong)
+        } label: {
             PlayerCardView(providedPlayer: maLong)
         }
     }

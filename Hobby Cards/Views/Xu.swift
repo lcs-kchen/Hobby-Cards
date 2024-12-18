@@ -9,8 +9,11 @@ import SwiftUI
 
 struct Xu: View {
     var body: some View {
-        NavigationStack {
-            PlayerCardView(providedPlayer: xuXing)
+            NavigationLink {
+                PlayerDetailedView(playersToShow: xuXing)
+            } label: {
+                PlayerCardView(providedPlayer: xuXing)
+            }
         }
     }
-}
+
