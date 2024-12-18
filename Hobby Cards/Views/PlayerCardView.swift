@@ -28,7 +28,7 @@ struct PlayerCardView: View {
                         .fill(.yellow)
                         .frame(height: 100)
                         .overlay {
-                            Text(providedPlayer.Country)
+                            Text(providedPlayer.Sport)
                                 .font(.largeTitle)
                                 .bold()
                                 .foregroundStyle(.white)
